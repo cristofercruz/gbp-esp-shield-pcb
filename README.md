@@ -12,4 +12,4 @@ Here's a render of the PCB:
 Here's a photo of an assembled prototype using a D1 mini Pro board:
 ![Assembled prototype using earlier revision pcb](images/prototype.png)
 
-You can get help with this project and find info on the software that runs on the ESP by joining the [Game Boy Camera Club discord server](http://bit.ly/gbccd
+You can get help with this project and find info on the software that runs on the ESP by joining the [Game Boy Camera Club discord server](http://bit.ly/gbccd)
