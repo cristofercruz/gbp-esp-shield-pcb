@@ -6,8 +6,8 @@ Enthusiasts on the [Game Boy Camera Club discord server](http://bit.ly/gbccd) ha
 
 The board is designed with two options for the oled screen placement. There are mousebite perferations to trim the board if you plan on using the smaller layout only.
 
-Here's a render of the PCB:
-![3D render of the pcb design](images/render.png)
+Here's a render of the PCB:  
+<img src="/cristofercruz/gbp-esp-shield-pcb/raw/master/images/render.png" alt="3D render of the pcb design" style="max-width:50%;">
 
 # Recommended D1 mini Boards:  
 **LOLIN D1 mini Pro** - https://www.aliexpress.com/item/32724692514.html  
