@@ -11,7 +11,7 @@ Here's a render of the PCB:
 
 # Recommended D1 mini Boards:
 
-**LOLIN D1 mini Pro** - https://www.aliexpress.com/item/32724692514.html
+**LOLIN D1 mini Pro** - https://www.aliexpress.com/item/32724692514.html 
 LiPo battery connector, charge circuit included. No power switch.
 
 **LILYGO TTGO D1 mini** - https://www.aliexpress.com/item/4001144115302.html
