@@ -1,6 +1,6 @@
 # Game Boy WiFi Printer - D1 Mini Shield
 
-<a href="https://oshpark.com/shared_projects/KH3ALIwH"><img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park"></img></a>
+<a href="https://oshpark.com/shared_projects/KH3ALIwH"><img src="https://oshpark.com/packs/media/images/badge-5f4e3bf4bf68f72ff88bd92e0089e9cf.png" alt="Order from OSH Park"></img></a>
 
 Enthusiasts on the [Game Boy Camera Club discord server](http://bit.ly/gbccd) have been working on a Game Boy Printer emulator project based on ESP8266 D1 mini boards. Taking inspiration from other projects like the [Gameboy Link Cable Breakout PCB](https://github.com/Palmr/gb-link-cable), I created this shield board to add a link connector and pinouts for an oled screen.
 
@@ -8,6 +8,17 @@ The board is designed with two options for the oled screen placement. There are 
 
 Here's a render of the PCB:
 ![3D render of the pcb design](images/render.png)
+
+**Recommended D1 mini Boards**:
+LOLIN D1 mini Pro - https://www.aliexpress.com/item/32724692514.html
+LiPo battery connector, charge circuit included. No power switch.
+
+LILYGO TTGO D1 mini - https://www.aliexpress.com/item/4001144115302.html
+16340 battery holder, charge curcuit, and power switch included.
+
+LOLIN D1 mini - https://www.aliexpress.com/item/32529101036.html
+No battery connector, charge curcit, or power switch included.
+
 
 Here's a photo of an assembled prototype using a D1 mini Pro board:
 ![Assembled prototype using earlier revision pcb](images/prototype.png)
