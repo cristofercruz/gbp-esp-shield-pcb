@@ -22,6 +22,6 @@ No battery connector, charge curcit, or power switch included.
 
 # Assembled Printer Example:  
 Here's a photo of an assembled prototype using a D1 mini Pro board:  
-<img src="images/prototype.png" alt="Assembled prototype using earlier revision pcb" width="50%">
+<img src="images/assembled.png" alt="Assembled prototype using earlier revision pcb" width="50%">
 
 You can get help with this project and find info on the software that runs on the ESP by joining the [Game Boy Camera Club discord server](http://bit.ly/gbccd)
