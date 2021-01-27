@@ -9,16 +9,19 @@ The board is designed with two options for the oled screen placement. There are 
 Here's a render of the PCB:
 ![3D render of the pcb design](images/render.png)
 
-**Recommended D1 mini Boards**:
-LOLIN D1 mini Pro - https://www.aliexpress.com/item/32724692514.html
+# Recommended D1 mini Boards:
+
+**LOLIN D1 mini Pro** - https://www.aliexpress.com/item/32724692514.html
 LiPo battery connector, charge circuit included. No power switch.
 
-LILYGO TTGO D1 mini - https://www.aliexpress.com/item/4001144115302.html
+**LILYGO TTGO D1 mini** - https://www.aliexpress.com/item/4001144115302.html
 16340 battery holder, charge curcuit, and power switch included.
 
-LOLIN D1 mini - https://www.aliexpress.com/item/32529101036.html
+**LOLIN D1 mini** - https://www.aliexpress.com/item/32529101036.html
 No battery connector, charge curcit, or power switch included.
 
+
+# Assembled Printer Example:
 
 Here's a photo of an assembled prototype using a D1 mini Pro board:
 ![Assembled prototype using earlier revision pcb](images/prototype.png)
