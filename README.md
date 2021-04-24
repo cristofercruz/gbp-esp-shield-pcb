@@ -19,6 +19,35 @@ LiPo battery connector, charge circuit included. No power switch.
 **LOLIN D1 mini** - https://www.aliexpress.com/item/32529101036.html  
 No battery connector, charge curcit, or power switch included.
 
+# Components
+
+Besides the OLED and ESP8266 board, there are two components this PCB uses:
+
+* 1x 4.7 KΩ resistor, required
+* 1x 3.5 mm LED, optional
+
+
+Placements for the components are clearly marked on the board's silkscreen. Find the resistor on the bottom of the PCB.
+
+# Pinouts
+
+The PCB breaks out these pins to the OLED:
+
+* SDA - D2
+* SDL - D1
+
+When using the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator) project, include this in your `config.h` file:
+
+```
+// Uncomment if using an adafruit oled display
+#define USE_OLED
+// Alternative OLED Pins
+#define OLED_SDA 4
+#define OLED_SCL 5
+```
+
+Note that 4 and 5 are the Arduino digital pin numbers corresponding to the D1 board's pins labeled D2 and D1. [Pin Reference](https://escapequotes.net/esp8266-wemos-d1-mini-pins-and-diagram/)
+
 
 # Assembled Printer Example:  
 Here's a photo of an assembled printer using a D1 mini Pro board:  
