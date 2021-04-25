@@ -29,24 +29,24 @@ Besides the OLED and ESP8266 board, there are two components this PCB uses:
 
 Placements for the components are clearly marked on the board's silkscreen. Find the resistor on the bottom of the PCB.
 
-# Pinouts
+# Configuration
 
-The PCB breaks out these pins to the OLED:
-
-* SDA - D2
-* SDL - D1
-
-When using the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator) project, include this in your `config.h` file:
+The shield PCB breaks out appropriate pins to the OLED and the printer port. When using the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator) project, include this in your `config.h` file:
 
 ```
-// Uncomment if using an adafruit oled display
+// GBPrinter shield PCB
+// Pinout to OLED
 #define USE_OLED
-// Alternative OLED Pins
 #define OLED_SDA 4
 #define OLED_SCL 5
+// Pinout to link port
+#define SENSE_BOOT_MODE
+#define GB_5V_OUT 15
 ```
 
-Note that 4 and 5 are the Arduino digital pin numbers corresponding to the D1 board's pins labeled D2 and D1. [Pin Reference](https://escapequotes.net/esp8266-wemos-d1-mini-pins-and-diagram/)
+You will be able to use the attached OLED, as well as toggle the board to printer mode simply by attaching the link cable to the shield.
+
+When connecting a link cable to the shield, check the silkscreen for indicators on which side should be placed up. (The flat side of the connector should face down and the rounded side should face up, the same side as the OLED screen.)
 
 
 # Assembled Printer Example:  
