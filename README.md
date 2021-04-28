@@ -19,6 +19,35 @@ LiPo battery connector, charge circuit included. No power switch.
 **LOLIN D1 mini** - https://www.aliexpress.com/item/32529101036.html  
 No battery connector, charge curcit, or power switch included.
 
+# Components
+
+Besides the OLED and ESP8266 board, there are two components this PCB uses:
+
+* 1x 4.7 KΩ resistor, required
+* 1x 3.5 mm LED, optional
+
+
+Placements for the components are clearly marked on the board's silkscreen. Find the resistor on the bottom of the PCB.
+
+# Configuration
+
+The shield PCB breaks out appropriate pins to the OLED and the printer port. When using the [wifi-gbp-emulator](https://github.com/HerrZatacke/wifi-gbp-emulator) project, include this in your `config.h` file:
+
+```
+// GBPrinter shield PCB
+// Pinout to OLED
+#define USE_OLED
+#define OLED_SDA 4
+#define OLED_SCL 5
+// Pinout to link port
+#define SENSE_BOOT_MODE
+#define GB_5V_OUT 15
+```
+
+You will be able to use the attached OLED, as well as toggle the board to printer mode simply by attaching the link cable to the shield.
+
+When connecting a link cable to the shield, check the silkscreen for indicators on which side should be placed up. (The flat side of the connector should face down and the rounded side should face up, the same side as the OLED screen.)
+
 
 # Assembled Printer Example:  
 Here's a photo of an assembled printer using a D1 mini Pro board:  
