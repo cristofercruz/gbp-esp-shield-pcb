@@ -1,23 +1,21 @@
 # Game Boy WiFi Printer - D1 Mini Shield  
 
-<a href="https://oshpark.com/shared_projects/KH3ALIwH"><img src="https://oshpark.com/packs/media/images/badge-5f4e3bf4bf68f72ff88bd92e0089e9cf.png" alt="Order from OSH Park"></img></a>
+<a href="https://oshpark.com/shared_projects/7WqZCkn1"><img src="https://oshpark.com/packs/media/images/badge-5f4e3bf4bf68f72ff88bd92e0089e9cf.png" alt="Order from OSH Park"></img></a>
 
 Enthusiasts on the [Game Boy Camera Club discord server](http://bit.ly/gbccd) have been working on a Game Boy Printer emulator project based on ESP8266 D1 mini boards. Taking inspiration from other projects like the [Gameboy Link Cable Breakout PCB](https://github.com/Palmr/gb-link-cable), I created this shield board to add a link connector and pinouts for an oled screen.
-
-The board is designed with two options for the oled screen placement. There are mousebite perferations to trim the board if you plan on using the smaller layout only.
 
 Here's a render of the PCB  
 <img src="images/render.png" alt="3D render of the pcb design" width="50%">
 
 # Recommended D1 mini Boards:  
-**LOLIN D1 mini Pro** - https://www.aliexpress.com/item/32724692514.html  
-LiPo battery connector, charge circuit included. No power switch.
+**LILYGO TTGO D1 mini** (recommended) - https://www.aliexpress.com/item/4001144115302.html  
+Embedded 16340 battery holder, embedded charge curcuit, and embedded power switch.
 
-**LILYGO TTGO D1 mini** - https://www.aliexpress.com/item/4001144115302.html  
-16340 battery holder, charge curcuit, and power switch included.
+**LOLIN D1 mini Pro** - https://www.aliexpress.com/item/32724692514.html  
+Embedded LiPo battery connector, embedded charge circuit. No embedded power switch.
 
 **LOLIN D1 mini** - https://www.aliexpress.com/item/32529101036.html  
-No battery connector, charge curcit, or power switch included.
+No battery connector, no charge curcit, and no power switch included.
 
 # Assembled Printer Example  
 Here's a photo of an assembled printer using a D1 mini Pro board:  
@@ -26,11 +24,12 @@ Here's a photo of an assembled printer using a D1 mini Pro board:
 # Components  
 Besides the ESP8266 board, this shield uses the following components:
 
-* 1× 4.7kΩ resistor (*required*)
+* 1× 4.7kΩ resistor (*required for link detection*)
+* 1x 10kΩ resistor (*required for link detection*)
 * 1× 128×32 OLED display (*optional, recommended*)
 * 1× 3.5mm LED (*optional*)
 
-Placements for the components are clearly marked on the board's silkscreen. Find the resistor on the bottom of the PCB.
+Placements for the components are clearly marked on the board's silkscreen. The resistors can be either through hole or surface mount type and can be placed either on the top OR bottom of the board.
 
 # Compatible Software  
 This shield breaks out appropriate pins for the Game Boy Link port that is part of the PCB itself. This hardware is suitable for both the [Arduino Game Boy Printer Emulator](https://github.com/mofosyne/arduino-gameboy-printer-emulator) as well as the [WiFi Game Boy Printer Emulator](https://github.com/HerrZatacke/wifi-gbp-emulator)
@@ -39,7 +38,7 @@ When using this with the WiFi Game Boy Printer Emulator, you can uncomment and a
 ```
 // Sense boot mode lets you use the signal on pin GB_5V_OUT to determine printer/server mode
 #define SENSE_BOOT_MODE
-#define GB_5V_OUT 15
+#define GB_5V_OUT 16
 ```
 
 If you've added the optional OLED display, you can uncomment and adjust the pins on the following lines in your `config.h` file:  
